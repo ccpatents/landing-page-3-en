@@ -10569,6 +10569,12 @@ html {
   font-family: 'Gothic+A1', sans-serif;
 }
 
+u {
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 3px solid #0ce08f;
+}
+
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75);
 }
@@ -11186,7 +11192,7 @@ header.masthead .usecase-item-red:focus, header.masthead .usecase-item-red:hover
 }
 
 #patent_search h2 {
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 #patent_search p {
@@ -11196,7 +11202,7 @@ header.masthead .usecase-item-red:focus, header.masthead .usecase-item-red:hover
 
 @media (max-width: 991.98px) {
   #patent_search h2 {
-    font-size: 1.75rem;
+    font-size: 1.6rem;
     text-align: left !important;
   }
   #patent_search p {

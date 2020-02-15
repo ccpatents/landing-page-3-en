@@ -6,6 +6,12 @@ html {
   font-family: 'Gothic+A1', sans-serif;
 }
 
+u {
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 3px solid #0ce08f;
+}
+
 // Typography
 .text-white-75 {
   color: fade-out($white, .25);
