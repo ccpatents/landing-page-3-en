@@ -1,0 +1,207 @@
+// Styling for the masthead
+header.masthead {
+  min-height: 70vh;
+  padding-bottom: calc(10rem - #{$navbar-height});
+  // replace the masthead.jpg image in the /img directory to change the image
+  // if the image name change, make sure to update the url path below!
+  position: relative;
+  background-color: $white;
+  width: 100%;
+  overflow: hidden;
+  color: $white;
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-weight: 800;
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+    padding-bottom: .5rem;
+    margin-bottom: 0;
+  }
+
+  .btn {
+    &:focus {
+      outline: none !important;
+      -webkit-box-shadow: none !important;
+      box-shadow: none !important;
+    }
+  }
+
+  .btn-blue {
+    color: $white;
+    background-color: #1473e6;
+    padding: 0.5rem 1.2rem;
+
+    &:hover {
+      background-color: #0d66d0;
+    }
+  }
+
+  .btn-red {
+    color: $white;
+    background-color: $primary;
+    padding: 0.5rem 1.2rem;
+
+    &:hover {
+      background-color: #df7c19;
+    }
+  }
+
+  span {
+    font-size: 1.2rem;
+  }
+
+  .popup-img {
+    width: 100%;
+  }
+
+  #scroll-down {
+    background: none;
+    color: #fff;
+
+    &:hover {
+      text-decoration: none;
+      color: $primary;
+    }
+
+    i {
+      font-size: 18px;
+    }
+  }
+
+  video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: auto;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .container,
+  .container-fluid {
+    position: relative;
+    z-index: 2;
+  }
+
+  .overlay {
+    //background-color: linear-gradient(to bottom, #{fade-out(#242222, .4)} 0%, #{fade-out(#242222, .4)} 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to bottom, #{fade-out($secondary, .35)} 0%, #{fade-out($secondary, .55)} 100%);
+    z-index: 1;
+  }
+
+  .usecase-item {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  .usecase-item-blue {
+    background-image: linear-gradient(to right, #{fade-out(rgb(0, 140, 186), 0.2)} 0%, #{fade-out(rgb(0, 140, 186), .5)} 100%);
+    &:focus,
+    &:hover {
+      color: #ffffff;
+      text-decoration: none;
+      background-image: linear-gradient(to right, #{fade-out(rgb(0, 140, 186), 0.05)} 0%, #{fade-out(rgb(0, 140, 186), .3)} 100%);
+    }
+  }
+
+  .usecase-item-red {
+    background-image: linear-gradient(to left, #{fade-out(rgb(247, 73, 73), 0.2)} 0%, #{fade-out(rgb(247, 73, 73), .5)} 100%);
+    &:focus,
+    &:hover {
+      color: #ffffff;
+      text-decoration: none;
+      background-image: linear-gradient(to left, #{fade-out(rgb(247, 73, 73), 0.05)} 0%, #{fade-out(rgb(247, 73, 73), .3)} 100%);
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    padding-top: 6.5rem !important;
+    padding-bottom: 2rem;
+
+    h1 {
+      margin-top: 1rem;
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    h3 {
+      font-size: 1,05rem;
+    }
+
+    .overlay {
+      background: linear-gradient(to bottom, #{fade-out($secondary, .55)} 0%, #{fade-out($secondary, .85)} 100%), url('../img/m_bg.png');
+      //background-image: url('../img/m_bg.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-size: cover;
+      opacity: 1;
+    }
+
+    video {
+      display:none;
+    }
+
+    .usecase {
+      margin: 1rem 1rem 0;
+      position: static !important;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    height: 80vh;
+    min-height: 40rem;
+    padding-top: $navbar-height;
+    padding-bottom: 0;
+
+    
+  }
+
+
+
+  @include media-breakpoint-up(xl) {
+    h1 {
+      font-size: 3.3rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+    }
+    video {
+      min-width: auto;
+      min-height: 100%;
+      width: auto;
+      height: 100%;
+    }
+  }
+}

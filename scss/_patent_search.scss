@@ -1,0 +1,27 @@
+#patent_search {
+	word-break: keep-all;
+	color: $dark;
+
+	b {
+		font-weight: bold;
+	}
+
+	h2 {
+		font-size: 2rem;
+	}
+
+	p {
+		font-size: 1.1rem;
+		font-weight: 500;
+	}
+
+	@include media-breakpoint-down(md) {
+		h2 {
+			font-size: 1.75rem;
+			text-align: left !important;
+		}
+		p {
+			font-size: 1rem;
+		}
+	}
+}
