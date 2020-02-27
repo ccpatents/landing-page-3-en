@@ -19,6 +19,35 @@ let bg_video = document.getElementById("bg_video");
   let filter = "win32|win64|mac";
   if (navigator.platform) {
     if (filter.indexOf(navigator.platform.toLowerCase()) < 0) {
+      // // 사용할 앱의 JavaScript 키를 설정해 주세요.
+      Kakao.init('5e27a7316193f718575986dcfa86666f');
+      // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+      Kakao.Link.createDefaultButton({
+        container: '#kakao-link-btn',
+        objectType: 'feed',
+        content: {
+          title: 'CCPatents',
+          description: '#특허 검색식 #완성 도우미',
+          imageUrl: 'https://kr.ccpatents.net/icon_kakao.png',
+          link: {
+            mobileWebUrl: 'https://kr.ccpatents.net',
+            webUrl: 'https://kr.ccpatents.net'
+          }
+        },
+        social: {
+          likeCount: 286,
+          commentCount: 45,
+          sharedCount: 845
+        },
+        buttons: [{
+          title: '웹으로 보기',
+          link: {
+            mobileWebUrl: 'https://kr.ccpatents.net',
+            webUrl: 'https://kr.ccpatents.net'
+          }
+        }, ]
+      });
+
       //mobile
       document.getElementById("share").style.display = "inline-block";
       document.getElementById("store-area2").style.display = "none";
@@ -37,7 +66,7 @@ let bg_video = document.getElementById("bg_video");
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
         $('html, body').animate({
-          scrollTop: (target.offset().top - 72)
+          scrollTop: (target.offset().top - 75)
         }, 1000, "easeInOutExpo");
         return false;
       }
@@ -57,24 +86,25 @@ let bg_video = document.getElementById("bg_video");
 
   // Collapse Navbar
   var navbarCollapse = function () {
-    if(!scroll_timer) {
-      scroll_timer = setTimeout(function() {
+    if (!scroll_timer) {
+      scroll_timer = setTimeout(function () {
         scroll_timer = null;
         let scrolled = $("#mainNav").offset().top;
+        let width = window.innerWidth;
         if (scrolled > 100) {
           $("#mainNav").addClass("navbar-scrolled");
         } else {
           $("#mainNav").removeClass("navbar-scrolled");
         }
 
-        if (scrolled > 999.9 && scroll_1000_event === false) {
-          gtag('event', 'scroll_1000', {
+        if (scrolled > 2000 && scroll_1000_event === false) {
+          gtag('event', 'scroll_2000', {
             'event_category': 'scroll'
           });
           scroll_1000_event = true;
         }
 
-        if(win_10) {
+        if (win_10) {
           if (scrolled > 470 && scrolled < 3200) {
             // 표시
             $('#store-area3').fadeIn('slow')
@@ -83,7 +113,14 @@ let bg_video = document.getElementById("bg_video");
             $('#store-area3').fadeOut('slow')
           }
         }
-      },250)
+        if (scrolled > 1500 && scrolled < 3300 && width > 1000) {
+          // 표시
+          $('#addon-area').fadeIn('slow');
+        } else {
+          // 제거
+          $('#addon-area').fadeOut('slow');
+        }
+      }, 250)
     }
   };
 
@@ -106,6 +143,10 @@ let bg_video = document.getElementById("bg_video");
   })*/
 
   $('.popup-img').popupimg();
+  $(".img-container").popupLightbox({
+    width: 1150,
+    height: 603
+  });
 
   //document.querySelector('#share').addEventListener('click', WebShare);
   /*document.getElementById('share').onclick = function () {
@@ -214,16 +255,6 @@ let bg_video = document.getElementById("bg_video");
     });
   }, 45000);
 })(jQuery); // End of use strict
-
-function share_click() {
-  if (!share_event) {
-    gtag('event', 'share', {
-      'event_category': 'button'
-    });
-  }
-  share_event = true;
-}
-
 
 /*async function WebShare() {
   if (navigator.share === undefined) {
