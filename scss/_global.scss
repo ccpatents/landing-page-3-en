@@ -3,13 +3,31 @@ body,
 html {
   width: 100%;
   height: 100%;
-  font-family: 'Gothic+A1', sans-serif;
+  font-family: 'Roboto', ;
+}
+
+b{
+  color: $black;
+  font-weight: 600;
 }
 
 u {
   text-decoration: none;
-  padding-bottom: 2px;
-  border-bottom: 3px solid #0ce08f;
+  padding-bottom: 0px;
+  border-bottom: 3px solid $dark;
+}
+
+ur{
+  text-decoration: none;
+  padding-bottom: 0px;
+  border-bottom: 3px solid rgb(255, 0, 0);
+  font-weight: bold;
+}
+
+ug{
+  text-decoration: none;
+  padding-bottom: 0px;
+  border-bottom: 3px dotted rgb(76, 197, 28);
 }
 
 // Typography

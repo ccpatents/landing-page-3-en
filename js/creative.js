@@ -6,6 +6,8 @@ let semi_download_event = false;
 
 let win_10 = false;
 
+let scroll_timer;
+
 let bg_video = document.getElementById("bg_video");
 
 (function ($) {
@@ -84,25 +86,46 @@ let bg_video = document.getElementById("bg_video");
 
   // Collapse Navbar
   var navbarCollapse = function () {
-    if ($("#mainNav").offset().top > 100) {
-      $("#mainNav").addClass("navbar-scrolled");
-    } else {
-      $("#mainNav").removeClass("navbar-scrolled");
-    }
+    if(!scroll_timer) {
+      scroll_timer = setTimeout(function() {
+        scroll_timer = null;
+        let scrolled = $("#mainNav").offset().top;
+        if (scrolled > 100) {
+          $("#mainNav").addClass("navbar-scrolled");
+        } else {
+          $("#mainNav").removeClass("navbar-scrolled");
+        }
 
-    if ($("#mainNav").offset().top > 999.9 && scroll_1000_event === false) {
-      gtag('event', 'scroll_1000', {
-        'event_category': 'scroll'
-      });
-      scroll_1000_event = true;
+        if (scrolled > 999.9 && scroll_1000_event === false) {
+          gtag('event', 'scroll_1000', {
+            'event_category': 'scroll'
+          });
+          scroll_1000_event = true;
+        }
+
+        if(win_10) {
+          if (scrolled > 470 && scrolled < 3200) {
+            // 표시
+            $('#store-area3').fadeIn('slow')
+          } else {
+            // 제거
+            $('#store-area3').fadeOut('slow')
+          }
+        }
+
+        
+
+        
+      },250)
     }
   };
+
   // Collapse now if page is not at top
   navbarCollapse();
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
-  $('.owl-carousel').owlCarousel({
+  /*$('.owl-carousel').owlCarousel({
     items: 1,
     loop: true,
     margin: 10,
@@ -113,9 +136,9 @@ let bg_video = document.getElementById("bg_video");
     autoplayHoverPause: false,
     mouseDrag: false,
     touchDrag: false,
-  })
+  })*/
 
-  //$('.popup-img').popupimg();
+  $('.popup-img').popupimg();
 
   //document.querySelector('#share').addEventListener('click', WebShare);
   /*document.getElementById('share').onclick = function () {
@@ -174,6 +197,15 @@ let bg_video = document.getElementById("bg_video");
     }
 
     if (!store_event && !gtag_ignore) {
+      gtag('event', 'store', {
+        'event_category': 'button'
+      });
+    }
+    store_event = true;
+  }
+
+  document.getElementById('store-button3').onclick = function () {
+    if (!store_event) {
       gtag('event', 'store', {
         'event_category': 'button'
       });

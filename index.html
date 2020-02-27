@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
   <meta charset="utf-8">
@@ -34,7 +34,8 @@
     gtag('config', 'UA-113551099-10');
   </script>
 
-  <title>CCPatents</title>
+  <!-- Naver Web Mater Verification -->
+  <meta name="naver-site-verification" content="6bc58c2f3e8161fe8df6acec8c1529ccff8c7495" />
 
   <!-- Font Awesome Icons -->
   <!--<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">-->
@@ -42,9 +43,7 @@
     type="text/css">
 
   <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Gothic+A1|Merriweather+Sans:400,700|Merriweather:400,300,300italic,400italic,700,700italic&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
   <!-- Plugin CSS -->
   <!--<link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">-->
@@ -86,13 +85,13 @@
             <a class="nav-link js-scroll-trigger" href="#whyhow">특허 검색은 왜? 그리고 어떻게?</a>
           </li>-->
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="https://www.youtube.com/watch?v=lH-aHi7pb0I&list=PLY0SP3bVLmOhe8Dh2PDL1CFua2M-6ITeh" target="_blank">Youtube</a>
+            <a class="nav-link js-scroll-trigger" href="https://www.youtube.com/watch?v=1UROBQ6pcEM" target="_blank">YouTube</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#patent_search">How to search patents?</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#manual">CCPatents manual</a>
+            <a class="nav-link js-scroll-trigger" href="#manual">CCPatents usecase</a>
           </li>
           <!--<li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#blog">블로그</a>
@@ -107,6 +106,14 @@
       </div>
     </div>
   </nav>
+
+  <div id="store-area3" style="position: fixed; bottom: 45px; right: 45px; width: 75px; display: none;">
+    <a id="store-button3" href="ms-windows-store://pdp/?productid=9N798V33QDF8" style="display: inline-block;">
+      <img src="img/store_en3.png" width="100%">
+    </a>
+    
+  </div>
+  
 
   <!-- Masthead -->
   <header class="masthead">
@@ -128,29 +135,27 @@
               data-aos="zoom-in">
               <div class="img-hover-container" style="width: 200px;">
                 <img
-                  src="https://1.bp.blogspot.com/-OcTM0sQ-P3Q/Xf2BfsK5A0I/AAAAAAAAHl8/n0jqczizugQFFxLyr6VmVPC_qHaIzml9gCLcBGAsYHQ/s1600/store_ko.png"
-                  alt="다운로드 버튼" class="img-hover-image">
+                  src="img/store_en.png"
+                  alt="download" class="img-hover-image">
                 <div class="img-hover-overlay">
-                  <div class="img-hover-text">Not required MS account.<br>Ignore login popup.</div>
+                  <div class="img-hover-text">Not required MS account.<br>Login window disregard.</div>
                 </div>
               </div>
             </a>
           </div>
           <div id="win_10_ads" style="display: none;">
-            <h3>Safely and quickly via Microsoft Store</h3>
+            <h3>Safely and quickly via Microsoft Store,</h3>
           </div>
 
-          <div id="share" class="py-3" style="display: none;">
-            <!--<a id="share" class="btn btn-red btn-xl js-scroll-trigger mt-5" href="#"><span><i class="fa fa-share"></i>&nbsp;기억해 두기</span></a>-->
-            <!--<div id="socials" class="da-share-html da-fb da-tw"></div>-->
-            <a id="kakao-link-btn" href="javascript:;">
-              <img src="//dev.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" width="50px" /> </a>
-            <p class="mt-3"><b>윈도우10에서</b></p>
-            <p><b>다운로드 버튼이 나타납니다.</b></p>
+          <div id="share" style="display: none">
+            <!--<a id="share" class="btn btn-red btn-xl js-scroll-trigger mt-5" href="#"><span><i class="fa fa-share"></i>&nbsp;Remember</span></a>-->
+            <div id="socials" class="da-share-html da-fb da-tw"></div>
+            <p class="mt-3"><b>Download button will appear</b></p>
+            <p><b>on Windows 10</b></p>
           </div>
 
           <!--<div class="usecase" style="position: absolute; bottom: 30px; left: 20px; z-index: 100;">
-            <a class="usecase-item usecase-item-blue" style="font-size: 11pt;" data-aos="fade-right" data-aos-duration="1750" href="https://blog.naver.com/ccpatents/221802788410" target="_blank"><b>'자석 필터 마스크'</b> 특허 검색 따라하기</a>
+            <a class="usecase-item usecase-item-blue" style="font-size: 11pt;" data-aos="fade-right" data-aos-duration="1750" href="https://blog.naver.com/ccpatents/221802788410" target="_blank">'자석 필터 마스크' 특허 검색 따라하기</a>
             <a class="usecase-item usecase-item-blue" style="font-size: 10pt;" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500" href="https://blog.naver.com/ccpatents/221680490250" target="_blank">Google Patents, 구글 검색엔진을 특허에 적용!</a>
             <a class="usecase-item usecase-item-blue" style="font-size: 13pt;" data-aos="fade-right" data-aos-duration="1250" data-aos-delay="750" href="https://blog.naver.com/ccpatents/221682474929" target="_blank">키프리스 vs Google Patents</a>
           </div>
@@ -164,28 +169,28 @@
     </div>
 
     <video id="bg_video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-      <source src="http://video_ko.ccpatents.net/bg4.mp4" type="video/mp4">
+      <source src="https://ccpatents.github.io/video_ko/bg4.mp4" type="video/mp4">
     </video>
   </header>
 
   <!--Why Section-->
   <section id="why">
-    <div class="container-fluid py-5 bg-light" data-aos="fade-up">
+    <div class="container-fluid py-5" data-aos="fade-up">
       <div class="row px-3">
         <div class="col-12 text-center">
           <h2>‘‘Too many patent search volume?’’</h2>
-          <p><b>You can reduce the search volume</b> <u>by specifying search ranges</u> such as <b>abstract</b> or <b>claims</b>.</p>
-          <p><b>Entering synonyms</b> can broaden your search results.</p>
-          <p><b>But Connecting synonyms</b> or <b>specifying search ranges</b> is a pretty tiring task.</p>
-          <p><b>CCPatents</b> solved this problems simply.</p>
+          <p>You can <ug>reduce the search volume</ug> by <b>specifying search ranges</b> such as abstract or claims.</p>
+          <p><b>Entering synonyms</b> can <ug>broaden your search results.</ug></p>
+          <p>But <b>Connecting synonyms</b> or <b>specifying search ranges</b> is <ug>a pretty tiring task.</ug></p>
+          <p><b>CCPatents solved this problems simply.</b></p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Patent Search section -->
-  <section id="patent_search" class="bg-white">
-    <div class="container py-4 bg-white">
+  <section id="patent_search" class="bg-light">
+    <div class="container py-4 bg-light">
 
       <div class="row no-gutters py-4">
 
@@ -194,21 +199,21 @@
           <img class="col-12 col-sm-8 col-lg-12" src="../img/patent_search/application2.png" alt="특허 명세서">
         </div>
         <div class="col-12 col-lg-6 order-1 order-lg-2 py-md-3 px-md-5">
-          <h2 class="py-3"><b>‘‘Let’s choose the search range.’’</b></h2>
+          <h2 class="py-3">‘‘Let’s choose the search range.’’</h2>
           <div class="px-2">
-            <p>The contents of a patent document are implied in <b>Title > Abstract > Claims</b> fields order.</p>
-            <p>The <b>Title</b> field <u>may be considered as a category of a patent</u>, and <u>the conponents or purpose of a patent may be included</u> in the <b>Abstract</b> field.</p>
-            <p><b>You can reduce your search volume</b> while increasing accuracy just <u>by specifying the words to be searched for specific field.</u></b></p>
+            <p><ug>The contents of a patent document are implied</ug> in <b>Title > Abstract > Claims</b> fields order.</p>
+            <p><b>The Title</b> field may be considered as <ug>a category of a patent</ug>, and <ug>the conponents or purpose of a patent</ug> may be included in <b>the Abstract field.</b></p>
+            <p>You can <ug>reduce your search volume while increasing accuracy</ug> just by <b>specifying the words to be searched for specific field.</b></p>
           </div>
         </div>
 
         <div class="col-12 col-lg-6 order-3 pt-5 py-md-3 px-md-5">
-          <h2 class="py-3"><b>‘‘Let’s find hidden patents.’’</b></h2>
+          <h2 class="py-3">‘‘Let’s find hidden patents.’’</h2>
           <div class="px-2">
             <p>There are many different terms used in each patent document.</p>
-            <p>'flexible' can be expressed as 'foldable' in some documents and 'bendable' in some documents.</p>
-            <p>Please, Compare your search results of "Flexible Display" and "Foldable Display"from Google Patents.</p>
-            <p>Perhaps the search results are different. So You have to link synonyms with the OR operator and synonym sets with the AND operator.</b></p>
+            <p><b>'flexible'</b> can <ug>be expressed as <b>'foldable'</b></ug> in some documents and <ug><b>'bendable'</b></ug> in some documents.</p>
+            <p>Please, Compare your search results of <ug>"<b>flexible</b> display"</ug> and <ug>"<b>foldable</b> display"</ug> from Google Patents.</p>
+            <p>Perhaps <b>the search results are different.</b> So <ug>You have to link synonyms</ug> with the OR operator <ug>and synonym sets</ug> with the AND operator.</p>
           </div>
         </div>
         <div class="col-12 col-lg-6 text-center p-3 order-4 row" data-aos="fade-up">
@@ -224,22 +229,22 @@
     <div class="container py-4 bg-white">
       <div class="row no-gutters py-4">
 
-        <h2 class="col-12 text-center pb-2"><b>‘‘The solution is CCPatents.’’</b></h2>
-        <p class="col-12 text-center pb-3"><b>‘필터에 자석을 포함해서 초미세먼지를 필터링하는 마스크’</b>와 관련된 특허를 찾아보겠습니다.</p>
+        <h2 class="col-12 text-center pb-2">‘‘The solution is CCPatents.’’</h2>
+        <p class="col-12 text-center pb-3"><b>‘필터에 자석을 포함해서 초미세먼지를 필터링하는 마스크’</b>와 <ug>관련된 특허</ug>를 찾아보겠습니다.</p>
 
-        <h3 class="col-12 text-center pb-2">Step1. 키워드 입력</h3>
-        <p class="col-12 text-center"><b>결합어 사용은 최대한 자제</b>해 주세요.</p>
+        <h3 class="col-12 text-center pb-2"><u>Step1. 키워드 입력</u></h3>
+        <p class="col-12 text-center"><ug>결합어 사용은 최대한 자제</ug>해 주세요.</p>
         <div class="col-0 col-lg-3"></div>
         <img class="col-12 col-lg-6" src="img/manual/entering_keywords.png">
         <div class="col-0 col-lg-3"></div>
 
-        <p class="col-12 text-center pt-3 mb-2" style="color: #ff0000;"><b><u>잘못된 예</u></b></p>
-        <p class="col-12 text-center"><b>태그</b> 안에 들어가 있는 문자열은 <b>한 개의 단어</b>로 취급됩니다.</p>
-        <p class="col-12 text-center">아래와 같이 입력하면, <b>‘필터에 자석이 포함된 마스크’</b> 등은 비슷해 보이지만 검색되지 않습니다.</p>
-        <p class="col-12 text-center">명백하게 위 문장에서 <b>‘자석필터’</b>, <b>‘자석필터마스크’</b> 등과 일치하는 문자열이 존재하지 않기 때문입니다.</p>
+        <p class="col-12 text-center pt-3 mb-2" style="color: #ff0000;"><ur>잘못된 예</ur></p>
+        <p class="col-12 text-center"><b>태그</b> 안에 들어가 있는 문자열은 <ug>한 개의 단어로 취급됩니다.</ug></p>
+        <p class="col-12 text-center">아래와 같이 입력하면, <b>‘필터에 자석이 포함된 마스크’</b> 등은 <ug>비슷해 보이지만 검색되지 않습니다.</ug></p>
+        <p class="col-12 text-center">명백하게 위 문장에서 <b>‘자석필터’</b>, <b>‘자석필터마스크’</b> 등과 <ug>일치하는 문자열이 존재하지 않기 때문입니다.</ug></p>
 
         <div class="col-0 col-lg-3"></div>
-        <img class="col-12 col-lg-6" src="img/manual/wrong1.png">
+        <img class="col-12 col-lg-6" style="cursor: pointer;" src="img/manual/wrong1.png">
         <div class="col-0 col-lg-3"></div>
 
         <div class="col-0 col-lg-3"></div>
@@ -250,26 +255,30 @@
         <img class="col-12 col-lg-6" src="img/manual/wrong3.png">
         <div class="col-0 col-lg-3"></div>
 
-        <h3 class="col-12 text-center pt-5 pb-2">Step2. 검색식 생성</h3>
+        <h3 class="col-12 text-center pt-5 pb-2"><u>Step2. 검색식 생성</u></h3>
         <p class="col-12 text-center">돋보기 버튼을 누르면 <b>키워드마다 동의어를 입력할 수 있는 창</b>이 나타납니다.</p>
-        <p class="col-12 text-center">키프리스 동의어 사전을 내장하고 있고, 설정에서 활성화 시킬 수도 있지만, 노이즈가 많아서 추천하지는 않습니다.</p>
-        <p class="col-12 text-center">하지만 <b>직접 추가한 단어(주황색 태그)</b>는 자동으로 기억하고, 다음에 <b>자동으로 검색(파란색 태그)</b>됩니다.</p>
+        <p class="col-12 text-center"><b>키프리스 동의어 사전</b>을 내장하고 있고, 설정에서 활성화 시킬 수도 있지만, <ug>노이즈가 많아서 추천하지는 않습니다.</ug></p>
+        <p class="col-12 text-center">하지만 <b>직접 추가한 단어</b>(<ug>주황색 태그</ug>)는 자동으로 기억하고, 다음에 <b>자동으로 검색</b>(<ug>파란색 태그</ug>)됩니다.</p>
         <p class="col-12 text-center">그리고 <b>키워드마다 검색범위를 지정</b>할 수 있습니다.</p>
-        <p class="col-12 text-center"><b>전문</b>(전체문서), <b>제목</b>(카테고리), <b>요약</b>(구성요소, 목적), <b>청구항</b>(법으로 보호하는 내용) 중에서 선택해 주세요.</p>
+        <p class="col-12 text-center"><b>전문</b>(전체문서), <b>제목</b>(카테고리), <b>요약</b>(구성요소, 목적), <b>청구항</b>(법으로 보호하는 내용) 중에서 <ug>선택해 주세요.</ug></p>
         <p class="col-12 text-center">마지막으로 <b>특허 검색 사이트</b>를 하고 <b>검색식 생성 버튼</b>을 누르면 검색식이 생성됩니다.</p>
-        <p class="col-12 text-center"><b>키프리스</b>는 우리나라 특허청에서 제공하는 특허검색 서비스이고, <b>Google Patents</b>는 구글 검색엔진을 특허DB에 적용한 서비스입니다.</p>
+        <p class="col-12 text-center"><b>키프리스</b>는 <ug>우리나라 특허청에서 제공하는 특허검색 서비스</ug>이고, <b>Google Patents</b>는 <ug>구글 검색엔진을 특허DB에 적용한 서비스</ug>입니다.</p>
 
         <div class="col-0 col-lg-1"></div>
-        <img class="col-12 col-lg-10" src="img/manual/pre_string.png">
+        <img class="col-12 col-lg-10 mt-3 popup-img" style="cursor: pointer;" src="img/manual/pre_string.png">
         <div class="col-0 col-lg-1"></div>
+        <div class="col-0 col-lg-1"></div>
+        <div class="col-12 col-lg-11">※ 클릭하면 확대됩니다.</div>
 
-        <h3 class="col-12 text-center pt-5 pb-2">Step3. 특허 검색 및 반복</h3>
-        <p class="col-12 text-center"><b>특허 검색 버튼</b>을 누르면 선택한 사이트로 검색식을 전달하고, <b>즉시 검색결과를 표시</b>해 줍니다.</p>
+        <h3 class="col-12 text-center pt-5 pb-2"><u>Step3. 특허 검색 및 반복</u></h3>
+        <p class="col-12 text-center"><b>특허 검색 버튼</b>을 누르면 선택한 사이트로 검색식을 전달하고, <ug>즉시 검색결과를 표시해 줍니다.</ug></p>
         <p class="col-12 text-center"><b>‘마스크’</b>와 그 동의어들이 <b>제목에 반드시 포함</b>되도록 검색했더니 <b>746개가 검색</b>되었습니다.</p>
-        <p class="col-12 text-center">만약 검색결과나 관련없는 특허(노이즈)가 너무 많으면, <b>검색범위를 변경</b>하거나, <b>불필요한 단어를 삭제</b>해서 검색결과를 쉽게 줄일 수 있습니다.</p>
+        <p class="col-12 text-center"><ug>만약 검색결과나 관련없는 특허(노이즈)가 너무 많으면,</ug> <b>검색범위를 변경</b>하거나, <b>불필요한 단어를 삭제</b>해서 <ug>검색결과를 쉽게 줄일 수 있습니다.</ug></p>
         <div class="col-0 col-lg-1"></div>
-        <img class="col-12 col-lg-10" src="img/manual/result.png">
+        <img class="col-12 col-lg-10 mt-3 popup-img" style="cursor: pointer;" src="img/manual/result.png">
         <div class="col-0 col-lg-1"></div>
+        <div class="col-0 col-lg-1"></div>
+        <div class="col-12 col-lg-11">※ 클릭하면 확대됩니다.</div>
         
 
       </div>
@@ -279,26 +288,26 @@
   <!-- Install Section -->
   <section id="install" class="bg-light">
     <div class="container-fluid page-section bg-light">
-      <div class="row no-gutters p-3 p-md-5" data-aos="fade-up">
-        <div class="col-lg-5 order-2 order-lg-1">
+      <div class="row no-gutters py-3 px-0  py-md-5 px-md-0" data-aos="fade-up">
+        <div class="col-12 col-lg-6 col-xl-5 order-2 order-lg-1">
           <div class="video-container">
             <iframe id="install-video" width="560" height="315" src="https://www.youtube.com/embed/6GLS2SxLgqI?rel=0"
               frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe>
           </div>
         </div>
-        <div class="col-lg-7 px-3 px-lg-4 order-1 order-lg-2">
-          <h2 class="py-3"><b>‘‘마이크로소프트 계정이 없어도 설치할 수 있습니다.’’</b></h2>
+        <div class="col-12 col-lg-6 col-xl-7 px-3 px-lg-4 order-1 order-lg-2">
+          <h2 class="pb-3"><b>‘‘마이크로소프트 계정이 없어도 설치할 수 있습니다.’’</b></h2>
           <p id="win10_warn" style="display: none;">
-            윈도우10 전용 프로그램입니다. 윈도우10에서 스토어 버튼이 나타납니다.
+            <b>윈도우10 전용 프로그램</b>입니다. <ug>윈도우10에서 스토어 버튼이 나타납니다.</ug>
           </p>
-          <p><b>마이크로소프트 스토어</b>를 통해 안전하게 설치됩니다.</p>
-          <p class="pb-3">로그인 창이 뜨지만 그냥 닫아도 설치가 진행됩니다.</p>
+          <p><b>마이크로소프트 스토어</b>를 통해 <ug>안전하게 설치됩니다.</ug></p>
+          <p class="pb-3"><b>로그인 창</b>이 뜨지만 <ug>그냥 닫아도 설치가 진행됩니다.</ug></p>
           <!--<p>마이크로소프트 스토어에 <b>처음 접속</b>하면 <b>장치 간에 사용 알림</b>이 나타날 수 있지만, <b>관심 없음 버튼</b>을 클릭하면 설치가 진행됩니다.</p>-->
           <div id="store-area2" class="row" data-aos="zoom-in">
             <a id="store-button2" class="col-6 col-md-5 pb-3 pb-lg-0"
-              href="ms-windows-store://pdp/?productid=9N798V33QDF8"><img class="img-fluid" width="100%"
-                src="https://1.bp.blogspot.com/-0rhURw5cj9s/Xf2BfUsqYEI/AAAAAAAAHl4/tfGMocdsrWQ1aMD6u_nQaRS2BqmbCQA9gCLcBGAsYHQ/s1600/store_ko2.png"
+              href="ms-windows-store://pdp/?productid=9N798V33QDF8"><img class="img-fluid"
+                src="img/store_ko2.png"
                 alt="다운로드 버튼"></a>
           </div>
 
@@ -378,10 +387,10 @@
     AOS.init();
   </script>
   <!--<script data-cfasync="false" src="js/form-submission-handler.min.js"></script>-->
-  <!--<script src="js/jquery.popupimg.min.js"></script>-->
+  <script src="js/jquery.popupimg.min.js"></script>
   <!--<script src="js/native-toast.min.js"></script>-->
-  <!--<script src="js/jquery.da-share.min.js"></script>-->
-  <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+  <script src="js/jquery.da-share.min.js"></script>
+  <!--<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>-->
 
   <!-- Custom scripts for this template -->
   <!--<script src="js/creative.js" type="text/babel" data-presets="es2015,stage-2"></script>-->

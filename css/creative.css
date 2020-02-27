@@ -10566,13 +10566,31 @@ body,
 html {
   width: 100%;
   height: 100%;
-  font-family: 'Gothic+A1', sans-serif;
+  font-family: "Roboto";
+}
+
+b {
+  color: #000000;
+  font-weight: 600;
 }
 
 u {
   text-decoration: none;
-  padding-bottom: 2px;
-  border-bottom: 3px solid #0ce08f;
+  padding-bottom: 0px;
+  border-bottom: 3px solid #555555;
+}
+
+ur {
+  text-decoration: none;
+  padding-bottom: 0px;
+  border-bottom: 3px solid red;
+  font-weight: bold;
+}
+
+ug {
+  text-decoration: none;
+  padding-bottom: 0px;
+  border-bottom: 3px dotted #4cc51c;
 }
 
 .text-white-75 {
@@ -11083,7 +11101,6 @@ header.masthead .usecase-item-red:focus, header.masthead .usecase-item-red:hover
 #why {
   word-break: keep-all;
   color: #555555;
-  font-family: 'Gothic+A1', sans-serif;
 }
 
 #why h2 {
@@ -11165,6 +11182,7 @@ header.masthead .usecase-item-red:focus, header.masthead .usecase-item-red:hover
 }
 
 #install h2 {
+  font-weight: bold;
   font-size: 1.7rem;
 }
 
@@ -11187,22 +11205,19 @@ header.masthead .usecase-item-red:focus, header.masthead .usecase-item-red:hover
   color: #555555;
 }
 
-#patent_search b {
-  font-weight: bold;
-}
-
 #patent_search h2 {
-  font-size: 1.7rem;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
 #patent_search p {
-  font-size: 1.1rem;
   font-weight: 500;
+  font-size: 1.1rem;
 }
 
 @media (max-width: 991.98px) {
   #patent_search h2 {
-    font-size: 1.6rem;
+    font-size: 1.75rem;
     text-align: left !important;
   }
   #patent_search p {
@@ -11215,24 +11230,21 @@ header.masthead .usecase-item-red:focus, header.masthead .usecase-item-red:hover
   color: #555555;
 }
 
-#manual b {
-  font-weight: bold;
-}
-
 #manual h2 {
   color: #000000;
+  font-weight: bold;
   font-size: 2rem;
 }
 
 #manual h3 {
   font-weight: bold;
   font-size: 1.5rem;
-  text-decoration: underline;
 }
 
 #manual p {
   font-size: 1.1rem;
   font-weight: 500;
+  margin-bottom: 0.3rem;
 }
 
 @media (max-width: 991.98px) {
@@ -11243,9 +11255,9 @@ header.masthead .usecase-item-red:focus, header.masthead .usecase-item-red:hover
     color: #000000;
     font-weight: bold;
     font-size: 1.25rem;
-    text-decoration: underline;
   }
   #manual p {
     font-size: 1rem;
   }
 }
+/*# sourceMappingURL=creative.css.map */
