@@ -11231,7 +11231,12 @@ header.masthead .usecase-item-red:focus, header.masthead .usecase-item-red:hover
 
 #patent_search h2 {
   font-weight: bold;
-  font-size: 1.55rem;
+  font-size: 2rem;
+}
+
+#patent_search h3 {
+  font-weight: bold;
+  font-size: 1.65rem;
 }
 
 #patent_search p {
