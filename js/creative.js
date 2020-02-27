@@ -155,7 +155,7 @@ let bg_video = document.getElementById("bg_video");
     if (win_10) {
       gtag_ignore = false;
     } else {
-      alert("윈도우10에서만 지원됩니다.");
+      alert("It's only supported on Windows 10.");
     }
 
     if (!store_event && !gtag_ignore) {
@@ -172,7 +172,7 @@ let bg_video = document.getElementById("bg_video");
     if (win_10) {
       gtag_ignore = false;
     } else {
-      alert("윈도우10에서만 지원됩니다.");
+      alert("It's only supported on Windows 10.");
     }
 
     if (!store_event && !gtag_ignore) {
