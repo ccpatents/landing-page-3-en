@@ -10,6 +10,31 @@ header.masthead {
   overflow: hidden;
   color: $white;
 
+  .text-wave-h {
+    -webkit-animation: h_mover 0.5s infinite alternate;
+    animation: h_mover 0.5s infinite alternate;
+  
+    @-webkit-keyframes h_mover {
+      0% {
+        transform: translateX(0);
+      }
+  
+      100% {
+        transform: translateX(-5px);
+      }
+    }
+  
+    @keyframes h_mover {
+      0% {
+        transform: translateX(0);
+      }
+  
+      100% {
+        transform: translateX(-5px);
+      }
+    }
+  }
+
   h1 {
     font-size: 3rem;
   }
